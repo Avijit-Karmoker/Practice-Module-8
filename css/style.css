@@ -1,0 +1,139 @@
+/*    position     */
+
+.container{
+    display: flex;
+    position: relative;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: darkslategray;
+    margin: 5px;
+    border: 2px solid red;
+}
+
+.box-2{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+
+.box-3{
+    z-index: 1;
+}
+
+/*    frame     */
+
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-frame{
+    height: 210px;
+    width: 300px;
+    border: 5px solid goldenrod;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.photo img{
+    width: 100%;
+}
+
+.photo-details{
+    position: absolute;
+    height: 210px;
+    width: 300px;
+    top: 0;
+    display: none;
+}
+
+.photo-details h3{
+    background-color: rgba(255,255,255,.7)
+}
+
+.photo-frame:hover .photo-details{
+    display: block;
+    background-color: rgba(0,255,255,.1);
+}
+
+.photo-frame:hover .photo img{
+    transform: scale(1.3);
+    transition: transform 1s;
+}
+
+/*    grid     */
+
+.container1{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.blog{
+    background-color: cadetblue;
+}
+
+.blog-1{
+    grid-row: 1/span 6;
+}
+
+.blog-2{
+    grid-column: 2/span 2;
+}
+
+/*    display     */
+
+.room{
+    width: 500px;
+    height: 500px;
+    border: 5px solid rgba(65,105,225,.5);
+    margin: 10px;
+}
+
+/*    internal css     */
+
+.internal-css h1{
+    color: #c1a1d3;
+    background-color: #fde8cd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
